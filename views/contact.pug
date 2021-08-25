@@ -1,0 +1,23 @@
+extends base.pug
+block style 
+  style 
+        include ../static/style.css
+        include ../static/stylecontact.css
+block content 
+ h1 contact us 
+ 
+  form(action="/contactus" method="post")
+     
+    input(type="text" name="name" placeholder="Enter your name" class="item")
+      
+    input(type="phone" name="phone" placeholder="Enter your number" class="item")
+      
+    input(type="email" name="email" placeholder="Enter Email" class="item")
+      
+    input(type="date" name="dob" placeholder="Enter Your date of birth" class="item")
+     
+    input(type="submit", value="submit" name="submit" id="btn")
+       |
+     
+    
+    
